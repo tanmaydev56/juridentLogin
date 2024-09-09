@@ -113,7 +113,7 @@ t4.fromTo(
   { opacity: 0, transform: "translateX(600px)" },  // Starting state with translateX
   { 
     opacity: 1,
-    transform: "translateX(-60px)",                // Slide to position using translateX
+    transform: "translateX(-130px)",                // Slide to position using translateX
     duration: 1,
     ease: "power2.out",
   }
@@ -129,7 +129,7 @@ t4.fromTo(
   { opacity: 0, transform: "translateX(600px)" },  // Starting state with translateX
   { 
     opacity: 1,
-    transform: "translateX(-140px)",               // Slide to position using translateX
+    transform: "translateX(-300px)",               // Slide to position using translateX
     duration: 1,
     ease: "power2.out",
   }
@@ -405,7 +405,7 @@ tl.fromTo(
       <h2 className="text-[#1E1E1E] text-[20px] lg:text-[36px] font-[500] text-center">Everything in one place</h2>
       <div className="w-full lg:w-[379px] h-auto lg:h-[97px] text-center px-4 lg:px-0">
         <h2 className="text-[#000] text-[14px] lg:text-[20px] font-[500]">
-          Add your personal notes to any case you’d prefer
+          Add your personal notes to any case you’d prefer.
         </h2>
       </div>
     </div>
@@ -414,7 +414,7 @@ tl.fromTo(
 
 
 {/* mobile animation */}
-<div className="flex flex-col justify-center items-center gap-6 max-w-[400px]  h-[400px]  lg:hidden overflow-hidden" >
+<div className="flex flex-col justify-center items-center gap-6 max-w-[400px] w-full  h-[500px]  lg:hidden overflow-hidden" >
 <div className="flex">
       <img
         src={image1}
@@ -436,9 +436,9 @@ tl.fromTo(
       />
     </div>
 
-  <div className="flex w-full justify-between overflow-hidden ">
+  <div className="flex w-full justify-between   ">
   <div className="flex flex-col" id="text11" >
-      <h2 className="text-[#1E1E1E] text-[20px] lg:text-[36px] font-[500] text-center">Stay Organised</h2>
+      <h2 className="text-[#1E1E1E] text-[20px] lg:text-[36px] font-[500] w-[200px] text-center">Stay Organised</h2>
       <div className="w-full lg:w-[379px] h-auto lg:h-[97px] text-center px-4 lg:px-0">
         <h2 className="text-[#000] text-[14px] lg:text-[20px] font-[500]">
           Ensure that your schedule is accurate by entering new appointments or events into our digital calendar.
@@ -447,7 +447,7 @@ tl.fromTo(
     </div>
 
     <div id="text22" className="flex flex-col">
-      <h2 className="text-[#1E1E1E] text-[20px] lg:text-[36px] font-[500] text-center">Never be Late</h2>
+      <h2 className="text-[#1E1E1E] text-[20px] lg:text-[36px] w-[200px] font-[500] text-center">Never be Late</h2>
       <div className="w-full lg:w-[379px] h-auto lg:h-[97px] text-center px-4 lg:px-0">
         <h2 className="text-[#000] text-[14px] lg:text-[20px] font-[500]">
           Our alarm system integrated within the app will notify you of any upcoming events.
@@ -455,11 +455,11 @@ tl.fromTo(
       </div>
     </div>
 
-    <div id="text33" className="flex flex-col">
-      <h2 className="text-[#1E1E1E] text-[20px] lg:text-[36px] font-[500] text-center">Everything in one place</h2>
+    <div id="text33" className="flex flex-col ">
+      <h2 className="text-[#1E1E1E] text-[20px] lg:text-[36px] font-[500] w-[200px]  text-center">Everything in one place</h2>
       <div className="w-full lg:w-[379px] h-auto lg:h-[97px] text-center px-4 lg:px-0">
         <h2 className="text-[#000] text-[14px] lg:text-[20px] font-[500]">
-          Add your personal notes to any case you’d prefer
+          Add your personal notes to any case you’d prefer.
         </h2>
       </div>
     </div>
