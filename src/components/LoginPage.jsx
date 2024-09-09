@@ -409,19 +409,19 @@ const LoginPage = () => {
       <img
         src={image1}
         id="image11"
-        className="w-full max-w-[300px] lg:w-auto lg:max-w-none"
+        className="w-full max-w-[300px] lg:w-auto lg:max-w-none rounded-[30px]"
         alt="Image 1"
       />
       <img
         src={image2}
         id="image22"
-        className="w-full max-w-[300px] lg:w-auto lg:max-w-none"
+        className="w-full max-w-[300px] lg:w-auto lg:max-w-none rounded-[30px]"
         alt="Image 2"
       />
       <img
         src={image3}
         id="image33"
-        className="w-full max-w-[300px] lg:w-auto lg:max-w-none"
+        className="w-full max-w-[300px] lg:w-auto lg:max-w-none rounded-[30px]"
         alt="Image 3"
       />
     </div>
