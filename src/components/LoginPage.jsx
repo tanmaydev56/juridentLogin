@@ -45,95 +45,99 @@ const LoginPage = () => {
   
       t3.fromTo(
         "#image11",
-        { opacity: 0, x: 600 },  // Starting state
+        { opacity: 0, transform: "translateX(600px)" }, // Starting state with translateX
         { 
           opacity: 1,
-          x: 40,                  // Slide to position
+          transform: "translateX(40px)",               // Slide to the position using translateX
           duration: 1,
           ease: "power2.out",
         }
       ).to("#image11", {
-        opacity: 0,              // Fade out
+        opacity: 0,                                     // Fade out
         duration: 1,
-        delay: 5,                // Delay to allow full visibility
+        delay: 5,                                       // Delay to allow full visibility
       });
-  
+      
       t3.fromTo(
         "#image22",
-        { opacity: 0, x: 600 },  // Starting state
+        { opacity: 0, transform: "translateX(600px)" },  // Starting state with translateX
         { 
           opacity: 1,
-          x: -280,                // Slide to position
+          transform: "translateX(-280px)",               // Slide to the position using translateX
           duration: 1,
           ease: "power2.out",
         }
       ).to("#image22", {
-        opacity: 0,              // Fade out
+        opacity: 0,                                      // Fade out
         duration: 1,
-        delay: 5,                // Delay to allow full visibility
+        delay: 5,                                        // Delay to allow full visibility
       });
-  
+      
       t3.fromTo(
         "#image33",
-        { opacity: 0, x: 600 },  // Starting state
+        { opacity: 0, transform: "translateX(600px)" },  // Starting state with translateX
         { 
           opacity: 1,
-          x: -560,                 // Slide to position
+          transform: "translateX(-560px)",               // Slide to the position using translateX
           duration: 1,
           ease: "power2.out",
         }
       ).to("#image33", {
-        opacity: 0,              // Fade out
+        opacity: 0,                                      // Fade out
         duration: 1,
-        delay: 5,                // Delay to allow full visibility
+        delay: 5,                                        // Delay to allow full visibility
       });
+      
 
 
       // text mobile animation
-      t4.fromTo(
-        "#text11",
-        { opacity: 0, x: 600 },  // Starting state
-        { 
-          opacity: 1,
-          x: 100,                  // Slide to position
-          duration: 1,
-          ease: "power2.out",
-        }
-      ).to("#text11", {
-        opacity: 0,              // Fade out
-        duration: 1,
-        delay: 5,                // Delay to allow full visibility
-      });
+      // Animation for #text11
+t4.fromTo(
+  "#text11",
+  { opacity: 0, transform: "translateX(600px)" },  // Starting state with translateX
+  { 
+    opacity: 1,
+    transform: "translateX(100px)",                // Slide to position using translateX
+    duration: 1,
+    ease: "power2.out",
+  }
+).to("#text11", {
+  opacity: 0,                                      // Fade out
+  duration: 1,
+  delay: 5,                                        // Delay to allow full visibility
+});
 
-      t4.fromTo(
-        "#text22",
-        { opacity: 0, x: 600 },  // Starting state
-        { 
-          opacity: 1,
-          x: -60,                  // Slide to position
-          duration: 1,
-          ease: "power2.out",
-        }
-      ).to("#text22", {
-        opacity: 0,              // Fade out
-        duration: 1,
-        delay: 5,                // Delay to allow full visibility
-      });
+// Animation for #text22
+t4.fromTo(
+  "#text22",
+  { opacity: 0, transform: "translateX(600px)" },  // Starting state with translateX
+  { 
+    opacity: 1,
+    transform: "translateX(-60px)",                // Slide to position using translateX
+    duration: 1,
+    ease: "power2.out",
+  }
+).to("#text22", {
+  opacity: 0,                                      // Fade out
+  duration: 1,
+  delay: 5,                                        // Delay to allow full visibility
+});
 
-      t4.fromTo(
-        "#text33",
-        { opacity: 0, x: 600 },  // Starting state
-        { 
-          opacity: 1,
-          x: -140,                  // Slide to position
-          duration: 1,
-          ease: "power2.out",
-        }
-      ).to("#text22", {
-        opacity: 0,              // Fade out
-        duration: 1,
-        delay: 5,                // Delay to allow full visibility
-      });
+// Animation for #text33
+t4.fromTo(
+  "#text33",
+  { opacity: 0, transform: "translateX(600px)" },  // Starting state with translateX
+  { 
+    opacity: 1,
+    transform: "translateX(-140px)",               // Slide to position using translateX
+    duration: 1,
+    ease: "power2.out",
+  }
+).to("#text33", {  // This should target #text33 instead of #text22
+  opacity: 0,                                      // Fade out
+  duration: 1,
+  delay: 5,                                        // Delay to allow full visibility
+});
 
 
 
@@ -141,104 +145,110 @@ const LoginPage = () => {
       
 
 
-      t2.fromTo(
-        "#text1",
-        { opacity: 0, x: 600 },  // Starting state: right of the viewport
-        {
-          opacity: 1,
-          x: 390,                  // Slide to position
-          duration: 1,
-          ease: "power2.out",
-        }
-      ).to("#text1", {
-        opacity: 0,             // Fade out
-        duration: 1,
-        delay: 5,               // Delay to allow full visibility
-      });
+     // Animation for #text1
+t2.fromTo(
+  "#text1",
+  { opacity: 0, transform: "translateX(600px)" },  // Starting state: right of the viewport with translateX
+  {
+    opacity: 1,
+    transform: "translateX(390px)",                // Slide to position using translateX
+    duration: 1,
+    ease: "power2.out",
+  }
+).to("#text1", {
+  opacity: 0,                                      // Fade out
+  duration: 1,
+  delay: 5,                                        // Delay to allow full visibility
+});
 
-      t2.fromTo(
-        "#text2",
-        { opacity: 0, x: 600 },  // Starting state: right of the viewport
-        {
-          opacity: 1,
-          x: 60,                  // Slide to position
-          duration: 1,
-          ease: "power2.out",
-        },
-        "-=0.5"                 // Start slightly before image1 finishes
-      ).to("#text2", {
-        opacity: 0,             // Fade out
-        duration: 1,
-        delay: 5,               // Delay to allow full visibility
-      });
+// Animation for #text2
+t2.fromTo(
+  "#text2",
+  { opacity: 0, transform: "translateX(600px)" },  // Starting state: right of the viewport with translateX
+  {
+    opacity: 1,
+    transform: "translateX(60px)",                 // Slide to position using translateX
+    duration: 1,
+    ease: "power2.out",
+  },
+  "-=0.5"                                          // Start slightly before text1 finishes
+).to("#text2", {
+  opacity: 0,                                      // Fade out
+  duration: 1,
+  delay: 5,                                        // Delay to allow full visibility
+});
 
-      t2.fromTo(
-        "#text3",
-        { opacity: 0, x: 600 },  // Starting state: right of the viewport
-        {
-          opacity: 1,
-          x: -330,                  // Slide to position
-          duration: 1,
-          ease: "power2.out",
-        },
-        "-=0.5"                 // Start slightly before image2 finishes
-      ).to("#text3", {
-        opacity: 0,             // Fade out
-        duration: 1,
-        delay: 5,               // Delay to allow full visibility
-      });
+// Animation for #text3
+t2.fromTo(
+  "#text3",
+  { opacity: 0, transform: "translateX(600px)" },  // Starting state: right of the viewport with translateX
+  {
+    opacity: 1,
+    transform: "translateX(-330px)",               // Slide to position using translateX
+    duration: 1,
+    ease: "power2.out",
+  },
+  "-=0.5"                                          // Start slightly before text2 finishes
+).to("#text3", {
+  opacity: 0,                                      // Fade out
+  duration: 1,
+  delay: 5,                                        // Delay to allow full visibility
+});
+
   
       
   
       // Animation for image1
-      tl.fromTo(
-        "#image1",
-        { opacity: 0, x: 800 },  // Starting state: right of the viewport
-        {
-          opacity: 1,
-          x: 580,                  // Slide to position
-          duration: 1,
-          ease: "power2.out",
-        }
-      ).to("#image1", {
-        opacity: 0,             // Fade out
-        duration: 1,
-        delay: 5,               // Delay to allow full visibility
-      });
-  
-      // Animation for image2 (starts after image1 is done)
-      tl.fromTo(
-        "#image2",
-        { opacity: 0, x: 600 },  // Starting state: right of the viewport
-        {
-          opacity: 1,
-          x: 0,                  // Slide to position
-          duration: 1,
-          ease: "power2.out",
-        },
-        "-=0.5"                 // Start slightly before image1 finishes
-      ).to("#image2", {
-        opacity: 0,             // Fade out
-        duration: 1,
-        delay: 5,               // Delay to allow full visibility
-      });
-  
-      // Animation for image3 (starts after image2 is done)
-      tl.fromTo(
-        "#image3",
-        { opacity: 0, x: 600 },  // Starting state: right of the viewport
-        {
-          opacity: 1,
-          x: -550,                  // Slide to position
-          duration: 1,
-          ease: "power2.out",
-        },
-        "-=0.5"                 // Start slightly before image2 finishes
-      ).to("#image3", {
-        opacity: 0,             // Fade out
-        duration: 1,
-        delay: 5,               // Delay to allow full visibility
-      });
+     // Animation for #image1
+tl.fromTo(
+  "#image1",
+  { opacity: 0, transform: "translateX(800px)" },  // Starting state: right of the viewport with translateX
+  {
+    opacity: 1,
+    transform: "translateX(580px)",                // Slide to position using translateX
+    duration: 1,
+    ease: "power2.out",
+  }
+).to("#image1", {
+  opacity: 0,                                      // Fade out
+  duration: 1,
+  delay: 5,                                        // Delay to allow full visibility
+});
+
+// Animation for #image2 (starts after image1 is done)
+tl.fromTo(
+  "#image2",
+  { opacity: 0, transform: "translateX(600px)" },  // Starting state: right of the viewport with translateX
+  {
+    opacity: 1,
+    transform: "translateX(0px)",                  // Slide to position using translateX
+    duration: 1,
+    ease: "power2.out",
+  },
+  "-=0.5"                                          // Start slightly before image1 finishes
+).to("#image2", {
+  opacity: 0,                                      // Fade out
+  duration: 1,
+  delay: 5,                                        // Delay to allow full visibility
+});
+
+// Animation for #image3 (starts after image2 is done)
+tl.fromTo(
+  "#image3",
+  { opacity: 0, transform: "translateX(600px)" },  // Starting state: right of the viewport with translateX
+  {
+    opacity: 1,
+    transform: "translateX(-550px)",               // Slide to position using translateX
+    duration: 1,
+    ease: "power2.out",
+  },
+  "-=0.5"                                          // Start slightly before image2 finishes
+).to("#image3", {
+  opacity: 0,                                      // Fade out
+  duration: 1,
+  delay: 5,                                        // Delay to allow full visibility
+});
+
     }, []);
 
 
@@ -249,7 +259,7 @@ const LoginPage = () => {
   return (
     <div className='w-full h-screen '>
         
-<div className='flex flex-col lg:flex-row justify-between items-center w-full h-auto lg:h-[165px] shrink-0 bg-[#FAFAFA] p-4 lg:p-12 shadow-custom'>
+<div className='flex overflow-hidden flex-col lg:flex-row justify-between items-center w-full h-auto lg:h-[165px] shrink-0 bg-[#FAFAFA] p-4 lg:p-12 shadow-custom'>
 
   <div className='flex justify-center lg:justify-start gap-4 items-center w-full lg:w-auto'>
     <img src={logo} alt="Jurident Logo" className='lg:w-[38px] h-[72px] w-[25px]' />
@@ -404,7 +414,7 @@ const LoginPage = () => {
 
 
 {/* mobile animation */}
-<div className="flex flex-col justify-center items-center gap-6  h-[400px] w-full  lg:hidden" >
+<div className="flex flex-col justify-center items-center gap-6 max-w-[400px]  h-[400px]  lg:hidden overflow-hidden" >
 <div className="flex">
       <img
         src={image1}
