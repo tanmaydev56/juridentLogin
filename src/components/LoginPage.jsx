@@ -129,7 +129,7 @@ t4.fromTo(
   { opacity: 0, transform: "translateX(600px)" },  // Starting state with translateX
   { 
     opacity: 1,
-    transform: "translateX(-300px)",               // Slide to position using translateX
+    transform: "translateX(-310px)",               // Slide to position using translateX
     duration: 1,
     ease: "power2.out",
   }
