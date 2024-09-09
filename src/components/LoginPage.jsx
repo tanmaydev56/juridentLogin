@@ -48,7 +48,7 @@ const LoginPage = () => {
         { opacity: 0, x: 600 },  // Starting state
         { 
           opacity: 1,
-          x: 100,                  // Slide to position
+          x: 40,                  // Slide to position
           duration: 1,
           ease: "power2.out",
         }
@@ -63,7 +63,7 @@ const LoginPage = () => {
         { opacity: 0, x: 600 },  // Starting state
         { 
           opacity: 1,
-          x: -190,                // Slide to position
+          x: -280,                // Slide to position
           duration: 1,
           ease: "power2.out",
         }
@@ -78,7 +78,7 @@ const LoginPage = () => {
         { opacity: 0, x: 600 },  // Starting state
         { 
           opacity: 1,
-          x: -490,                 // Slide to position
+          x: -560,                 // Slide to position
           duration: 1,
           ease: "power2.out",
         }
@@ -95,7 +95,7 @@ const LoginPage = () => {
         { opacity: 0, x: 600 },  // Starting state
         { 
           opacity: 1,
-          x: 150,                  // Slide to position
+          x: 100,                  // Slide to position
           duration: 1,
           ease: "power2.out",
         }
@@ -125,7 +125,7 @@ const LoginPage = () => {
         { opacity: 0, x: 600 },  // Starting state
         { 
           opacity: 1,
-          x: -200,                  // Slide to position
+          x: -140,                  // Slide to position
           duration: 1,
           ease: "power2.out",
         }
